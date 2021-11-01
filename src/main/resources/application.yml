@@ -1,0 +1,18 @@
+spring:
+  profiles:
+    active:
+      - dog
+      - EN
+      - dev
+guru:
+  username: superuser
+  password: supersecretpassword
+  jdbcurl: someURLpropertiesYML
+
+---
+spring:
+  profiles: prod
+guru:
+  username: PRODsuperuser
+  password: PRODsupersecretpassword
+  jdbcurl: PRODsomeURLpropertiesYML
